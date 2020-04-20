@@ -1,9 +1,13 @@
 # pip install - e . to install the appliaction
 # Nothing changes from how you’ve been running your project so far. FLASK_APP is still set to flaskr and flask run still runs the application, but you can call it from anywhere, not just the flask-tutorial directory.
+
 # Instead of creating a Flask instance globally,
 # you will create it inside a function.
 # This function is known as the application factory. Any configuration, registration, and other setup the application needs will happen inside the function, then the application will be returned.
 # The Application Factory
+
+# TESTING
+# pip install pytest coverage
 
 from . import auth
 import os
