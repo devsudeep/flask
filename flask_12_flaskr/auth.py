@@ -18,6 +18,7 @@ bp = Blueprint('auth', __name__, url_prefix='/auth')
 # The authentication blueprint will have views to register new users and to log in and log out.
 
 
+# @bp.before_request('test')
 @bp.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
